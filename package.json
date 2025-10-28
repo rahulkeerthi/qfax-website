@@ -1,0 +1,11 @@
+{
+  "name": "qfax-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler pages deploy . --project-name=qfax-website"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.1"
+  }
+}

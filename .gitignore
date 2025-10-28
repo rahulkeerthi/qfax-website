@@ -27,3 +27,5 @@ dist/
 # Temp files
 *.tmp
 .cache/
+
+node_modules/

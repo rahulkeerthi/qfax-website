@@ -2,20 +2,24 @@
 
 ## Setup Instructions
 
-### 1. Connect to Cloudflare Pages
+### 1. Deploy with Wrangler CLI
 
-1. Go to [Cloudflare Pages](https://dash.cloudflare.com/) and log in
-2. Navigate to **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**
-3. Select the **qfax-website** repository
-4. Configure the build settings:
-   - **Project name**: `qfax-website`
-   - **Production branch**: `main`
-   - **Framework preset**: None
-   - **Build command**: (leave empty)
-   - **Build output directory**: `/`
-   - **Root directory**: `/`
+The site is deployed using Wrangler CLI (already configured):
 
-5. Click **Save and Deploy**
+```bash
+# Install dependencies
+npm install
+
+# Deploy to Cloudflare Pages
+npx wrangler pages deploy . --project-name=qfax-website
+
+# Or use npm script (if added)
+npm run deploy
+```
+
+**First-time setup:**
+- Login: `npx wrangler login`
+- Deploy creates the project automatically
 
 ### 2. Configure Custom Domain
 
