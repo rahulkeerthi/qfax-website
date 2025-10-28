@@ -1,0 +1,275 @@
+/* MODE7 Font */
+@font-face {
+  font-family: 'MODE7';
+  src: url('MODE7GX0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Teletext Color Palette */
+:root {
+  --color-white: #FFFFFF;
+  --color-red: #FF0000;
+  --color-green: #00FF00;
+  --color-yellow: #FFFF00;
+  --color-blue: #0000FF;
+  --color-magenta: #FF00FF;
+  --color-cyan: #00FFFF;
+  --color-black: #000000;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: 'MODE7', 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--color-cyan);
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.tagline {
+  font-size: 18px;
+  letter-spacing: 0.15em;
+}
+
+/* Content */
+.content {
+  margin-bottom: 40px;
+}
+
+.description {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* Store Badges */
+.store-badges {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.badge-placeholder {
+  border: 2px solid var(--color-cyan);
+  padding: 20px 30px;
+  text-align: center;
+  min-width: 200px;
+}
+
+/* Features */
+.features {
+  margin: 40px 0;
+  padding: 20px;
+  border: 2px solid var(--color-green);
+}
+
+.feature-item {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 2px solid var(--color-cyan);
+  margin-top: auto;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.footer-links span {
+  margin: 0 10px;
+}
+
+.contact {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Color Classes */
+.white { color: var(--color-white); }
+.red { color: var(--color-red); }
+.green { color: var(--color-green); }
+.yellow { color: var(--color-yellow); }
+.blue { color: var(--color-blue); }
+.magenta { color: var(--color-magenta); }
+.cyan { color: var(--color-cyan); }
+
+/* Links */
+a {
+  color: var(--color-cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Legal Pages */
+.legal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--color-cyan);
+}
+
+.legal-title {
+  font-size: 32px;
+  color: var(--color-cyan);
+  margin-bottom: 10px;
+}
+
+.legal-content {
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-content h2,
+.legal-content h3,
+.legal-content strong {
+  color: var(--color-yellow);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.legal-content p {
+  margin-bottom: 15px;
+}
+
+.legal-content ul {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.legal-content li {
+  margin-bottom: 8px;
+}
+
+.legal-content a {
+  color: var(--color-cyan);
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border: 2px solid var(--color-cyan);
+  color: var(--color-cyan);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  background-color: var(--color-cyan);
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .store-badges {
+    gap: 20px;
+  }
+
+  .badge-placeholder {
+    min-width: 150px;
+    padding: 15px 20px;
+  }
+
+  .features {
+    padding: 15px;
+  }
+
+  .feature-item {
+    font-size: 14px;
+  }
+
+  .legal-title {
+    font-size: 24px;
+  }
+
+  .legal-content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .store-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge-placeholder {
+    width: 100%;
+    max-width: 250px;
+  }
+}
