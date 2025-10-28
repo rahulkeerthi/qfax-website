@@ -12,6 +12,7 @@ reference/
 dist/
 .vercel/
 .output/
+.wrangler/
 
 # Environment
 .env
