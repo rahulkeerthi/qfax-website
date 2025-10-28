@@ -1,9 +1,5 @@
 name = "qfax-website"
 compatibility_date = "2025-10-28"
-pages_build_output_dir = "."
 
-# Custom domain (configure in Cloudflare dashboard)
-# routes = [
-#   { pattern = "qfax.football", custom_domain = true },
-#   { pattern = "www.qfax.football", custom_domain = true }
-# ]
+# Static site deployed via: wrangler pages deploy . --project-name=qfax-website
+# No additional config needed - directory specified in deploy command
